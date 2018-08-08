@@ -14,7 +14,7 @@ p {
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1.2em;
   width: 100%; }
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
@@ -449,12 +449,6 @@ template {
   .form__input:hover {
     border-bottom: 8px #83e9d1 solid; }
 
-.headline, .headline--primary {
-  font-size: 2.5em;
-  font-weight: 900;
-  line-height: 1.2em;
-  padding-left: 0.5em; }
-
 .nav__item, .nav__item--active {
   padding: 1em 0;
   border-radius: 0.5em;
@@ -470,7 +464,16 @@ template {
     color: #fff; }
 
 .headline--primary {
+  font-size: 2.5em;
+  line-height: 1.2em;
+  padding-left: 0.5em;
+  font-weight: 900;
   color: #58e1c1; }
+.headline--secondary {
+  font-size: 1.25em;
+  color: #838383;
+  padding: 1em 0;
+  font-weight: normal; }
 
 .link {
   font-weight: 900;
@@ -478,6 +481,15 @@ template {
   text-decoration: none; }
   .link:hover {
     color: #20b391; }
+
+.blockquote {
+  border-left: 12px #58e1c1 solid;
+  padding-left: 1em;
+  border-radius: 0.3em;
+  font-size: 1.4em;
+  font-style: italic;
+  line-height: 1.25em;
+  color: #838383; }
 
 .btn--default {
   background: #51ddfc; }
