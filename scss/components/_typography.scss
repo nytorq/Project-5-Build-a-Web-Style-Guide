@@ -1,0 +1,20 @@
+// ==========================================================================
+// Typographical Styles
+// ==========================================================================
+
+.headline {
+  @extend %headline;
+  @include m(primary) {
+    @extend %headline;
+    color: $color-secondary;
+  }
+}
+
+.link {
+  font-weight: $font-weight--ultra-bold;
+  color: $color-secondary;
+  text-decoration: none;
+  &:hover{
+    color: darken($color-secondary, 20%)
+  }
+}

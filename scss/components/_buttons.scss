@@ -1,0 +1,27 @@
+// ==========================================================================
+// Button Styles
+// ==========================================================================
+
+.btn {
+  @extend %btn;
+  @include m(default) {
+    @extend %btn;
+    background: $color-primary;
+  }
+  @include m(success) {
+    @extend %btn;
+    background: $color-success;
+  }
+  @include m(error) {
+    @extend %btn;
+    background: $color-negative;
+  }
+  @include m(warning) {
+    @extend %btn;
+    background: $color-warning;
+  }
+  @include m(info) {
+    @extend %btn;
+    background: $color-info;
+  }
+}

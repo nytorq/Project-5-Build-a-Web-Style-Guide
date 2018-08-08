@@ -1,7 +1,9 @@
 // ==========================================================================
-// Base Imports
+// Image Styles
 // ==========================================================================
 
-@import 'variables';
-@import 'base';
-@import 'normalize/import-now';
+.img {
+  @include e(logo) {
+    @extend %centered;
+  }
+}

@@ -1,0 +1,52 @@
+// ==========================================================================
+// Extends or Placeholders
+// ==========================================================================
+
+// General Placeholders
+
+%centered {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: $max-width;
+}
+
+// UI Element Specific Placeholders
+
+%btn {
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.9em 0;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: $font-weight--bold;
+  width: 100%;
+  margin: 1em 0;
+}
+
+%input {
+  border-bottom: 8px $color-secondary solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  max-width: -webkit-fill-available;
+  padding: 1em 0.5em;
+  margin: 1em 0;
+  &:hover {
+    border-bottom: 8px lighten($color-secondary, 10%) solid;
+  }
+}
+
+%headline {
+  font-size: 2.5em;
+  font-weight: $font-weight--ultra-bold;
+  line-height: 1.2em;
+  padding-left: 0.5em;
+}
+
+%nav-item {
+  padding: 1em 0;
+  border-radius: 0.5em;
+  text-decoration: none;
+}

@@ -1,7 +1,13 @@
 // ==========================================================================
-// Base Imports
+// Input, Radio, Checkbox, and label Styles
 // ==========================================================================
 
-@import 'variables';
-@import 'base';
-@import 'normalize/import-now';
+.form__input {
+  @extend %input;
+}
+
+.form__label {
+  @include m(hidden) {
+    display: none;
+  }
+}

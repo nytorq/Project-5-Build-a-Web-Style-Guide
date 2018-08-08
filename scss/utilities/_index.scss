@@ -1,7 +1,6 @@
 // ==========================================================================
-// Base Imports
+// Utility Imports
 // ==========================================================================
 
-@import 'variables';
-@import 'base';
-@import 'normalize/import-now';
+@import 'mixins';
+@import 'extends';
