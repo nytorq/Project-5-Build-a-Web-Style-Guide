@@ -11,6 +11,12 @@
   max-width: $max-width;
 }
 
+// %grid {
+//   width: 100%;
+//   padding: 2em 1em;
+//   margin: 1em auto;
+// }
+
 // UI Element Specific Placeholders
 
 %btn {
@@ -22,6 +28,7 @@
   font-weight: $font-weight--bold;
   width: 100%;
   margin: 1em 0;
+  max-width: 12em;
 }
 
 %input {
@@ -42,4 +49,7 @@
   padding: 1em 0;
   border-radius: 0.5em;
   text-decoration: none;
+  @media (min-width: $break-t) {
+    padding: 1em;
+  }
 }

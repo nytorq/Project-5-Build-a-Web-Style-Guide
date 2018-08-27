@@ -29,16 +29,6 @@ $tangerine                             : #fd7856;
 $lilac                                 : #927bc1;
 $slate-blue                            : #16465b;
 
-//  Extraneous colors that extractor found
-// $light-turqoise                        : #43849a;
-// $teal                                  : #3cabcb;
-// $light-teal                            : #65ddea;
-// $pink-gray                             : #a09cb8;
-// $gray                                  : #74787c;
-// $green                                 : #78d395;
-// $rose                                  : #e6bbd3;
-
-
 // Color Usage
 $color-primary                         : $seafoam-blue;
 $color-secondary                       : $algae-green;
@@ -52,11 +42,15 @@ $color-info                            : $lilac;
 $base__font-size                       : 16px;
 $base__line                            : 24px;
 
-// // Breakpoint
+// Breakpoint for Treehouse Project 5
+$break-t                               : 441px;
+
+
+// Breakpoint for traditional screens
 // $break-xs                              : 575px;
 // $break-s                               : 576px;
 // $break-m                               : 768px;
 // $break-l                               : 992px;
-//
+
 // // Path to assets
 // $path--rel                             : '../img';

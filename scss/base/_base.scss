@@ -12,6 +12,10 @@ ul {
   list-style: none;
   text-align: center;
   padding-left: 0;
+  @media (min-width: $break-t) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 p {
@@ -21,6 +25,10 @@ p {
 .container {
   max-width: 1024px;
   margin: 0 auto;
-  padding: 1.2em;
+  padding: 1.5em;
   width: 100%;
+}
+
+.centered {
+  @extend %centered;
 }
