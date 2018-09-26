@@ -2,19 +2,6 @@
 // Grid Styles
 // ==========================================================================
 
-// Styles to make .grid__row a flexbox container
-// .grid__row {
-//   margin: 2em 0;
-//   @include mq() {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-//     margin-top: 1em;
-//     margin-bottom: 1em;
-//   }
-// }
-
 .grid__row {
   margin: 2em 0;
   @include mq() {
@@ -29,46 +16,10 @@
 @include mq() {
   @for $i from 1 through 12 {
     .grid__col--#{$i} {
-      // flex-grow: #{$i};
       width: calc(1024px*calc(#{$i}/12));
-      // margin-left: 0.5em;
-      // margin-right: 0.5em;
     }
   }
 }
-
-
-
-// Styles to make .grid__row a CSS Grid
-// .grid__row {
-//   @media (min-width: $break-t) {
-//     display: grid;
-//     grid-template-columns: repeat(12, 1fr);
-//     grid-column: span 12;
-//     grid-gap: 1em;
-//     margin-top: 1em;
-//     margin-bottom: 1em;
-//   }
-// }
-//
-// // Grid creator
-// @for $i from 1 through 12 {
-//   .grid__col--#{$i} {
-//     grid-column: span #{$i};
-//   }
-// }
-
-// .theme__colors {
-//   margin: 0.5em 0;
-//   padding-top: 1em;
-//   padding-bottom: 1em;
-//   border-radius: 0.5em;
-//   text-align: center;
-//   @media (min-width: $break-t) {
-//     margin-left: 0.25em;
-//     margin-right: 0.25em;
-//   }
-// }
 
 .theme__colors {
   margin: 0.5em 0;
@@ -92,7 +43,7 @@ $theme-color-map: (
   '8' : $color-warning
 );
 
-// looping through each combo of .grid__col--# and .theme__colors to apply a background-color
+// Looping through each combo of .grid__col--# and .theme__colors to apply a background-color
 @each $col-value, $themecolor in $theme-color-map {
   .grid__col--#{$col-value}.theme__colors {
     background-color: $themecolor;
