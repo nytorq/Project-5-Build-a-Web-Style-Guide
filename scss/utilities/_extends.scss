@@ -5,30 +5,27 @@
 // General Placeholders
 
 %centered {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
   width: 100%;
   max-width: $max-width;
+  flex-grow: inherit;
 }
-
-// %grid {
-//   width: 100%;
-//   padding: 2em 1em;
-//   margin: 1em auto;
-// }
 
 // UI Element Specific Placeholders
 
 %btn {
   border: none;
   border-radius: 0.3em;
-  padding: 0.9em 0;
   color: $white;
   text-transform: uppercase;
   font-weight: $font-weight--bold;
   width: 100%;
   margin: 1em 0;
-  max-width: 12em;
+  padding: 1.5em 0;
+  @include mq() {
+    max-width: 12em;
+  }
 }
 
 %input {
@@ -49,7 +46,18 @@
   padding: 1em 0;
   border-radius: 0.5em;
   text-decoration: none;
-  @media (min-width: $break-t) {
+  @include mq() {
     padding: 1em;
   }
+}
+
+%link {
+  font-weight: $font-weight--ultra-bold;
+  color: $color-secondary;
+  text-decoration: none;
+}
+
+%images {
+  width: 12em;
+  display: block;
 }

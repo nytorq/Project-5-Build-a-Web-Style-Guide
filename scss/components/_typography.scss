@@ -20,9 +20,7 @@
 }
 
 .link {
-  font-weight: $font-weight--ultra-bold;
-  color: $color-secondary;
-  text-decoration: none;
+  @extend %link;
   &:hover{
     color: darken($color-secondary, 20%)
   }

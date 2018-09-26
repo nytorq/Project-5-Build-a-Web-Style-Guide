@@ -5,19 +5,17 @@
 .img {
   @include m(logo) {
     @extend %centered;
-    width: 12em;
-    display: block;
+    @extend %images;
     margin-top: 3em;
     margin-bottom: 4em;
-    @media (min-width: $break-t) {
+    @include mq() {
       margin: 1em;
       width: 8em;
     }
   }
   @include m(avatar) {
     @extend %centered;
-    width: 12em;
-    display: block;
+    @extend %images;
     margin: 2em auto;
     border: 1em solid transparent;
   }
