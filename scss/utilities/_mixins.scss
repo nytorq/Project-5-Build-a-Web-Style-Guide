@@ -16,8 +16,8 @@
 }
 
 // Media Query Mixin - v2
-@mixin mq() {
-    @media (min-width: $break-t) {
+@mixin mq($breakpoint) {
+    @media (min-width: $breakpoint) {
       @content;
     }
 }

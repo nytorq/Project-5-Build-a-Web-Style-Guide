@@ -4,7 +4,7 @@
 
 .grid__row {
   margin: 2em 0;
-  @include mq() {
+  @include mq($break-t) {
     @include flexbox {
       margin-top: 1em;
       margin-bottom: 1em;
@@ -13,7 +13,7 @@
 }
 
 // Flex-item loop to assign correct flex-grow property
-@include mq() {
+@include mq($break-t) {
   @for $i from 1 through 12 {
     .grid__col--#{$i} {
       width: calc(1024px*calc(#{$i}/12));
@@ -27,7 +27,7 @@
   padding-bottom: 1em;
   border-radius: 0.5em;
   text-align: center;
-  @include mq() {
+  @include mq($break-t) {
     margin-left: 0.25em;
     margin-right: 0.25em;
   }

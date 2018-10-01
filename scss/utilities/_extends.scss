@@ -22,9 +22,13 @@
   font-weight: $font-weight--bold;
   width: 100%;
   margin: 1em 0;
-  padding: 1.5em 0;
-  @include mq() {
-    max-width: 12em;
+  padding: 1.5em 0em;
+  @include mq($break-t) {
+    width: auto;
+    padding: 1.5em 2em;
+  }
+  @include mq($break-d) {
+    width: 15%;
   }
 }
 
@@ -46,7 +50,7 @@
   padding: 1em 0;
   border-radius: 0.5em;
   text-decoration: none;
-  @include mq() {
+  @include mq($break-t) {
     padding: 1em;
   }
 }

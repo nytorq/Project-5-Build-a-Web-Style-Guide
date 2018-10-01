@@ -8,7 +8,7 @@
     @extend %images;
     margin-top: 3em;
     margin-bottom: 4em;
-    @include mq() {
+    @include mq($break-t) {
       margin: 1em;
       width: 8em;
     }
